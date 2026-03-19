@@ -31,8 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
             loading.style.display = 'none';
 
-            if (!data || data.length === 0) {
+            if (data.error) {
+                loading.innerText = 'Error: ' + data.error;
+                loading.style.display = 'block';
+                return;
+            }
+
+            if (!Array.isArray(data) || data.length === 0) {
                 noData.style.display = 'block';
+                totalCount.innerText = '0';
+                recentCount.innerText = '0';
                 return;
             }
 
