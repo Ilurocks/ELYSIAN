@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Acres | Premium Flats & Plots</title>
+    <meta name="description"
+        content="Discover your dream home or investment plot with Elysian Acres. Premium flats and residential plots in prime locations.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">ELYSIAN <span>ACRES</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#listings">Properties</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-contact">Inquire Now</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Find Your Perfect Space To Call Home</h1>
+        <p>Premium Flats and Strategic Plots in the most sought-after locations.</p>
+
+        <div class="search-container">
+            <div class="search-field">
+                <label>Type</label>
+                <select id="property-type">
+                    <option value="all">All Properties</option>
+                    <option value="flat">Luxury Flats</option>
+                    <option value="plot">Strategic Plots</option>
+                </select>
+            </div>
+            <div class="search-field">
+                <label>Location</label>
+                <input type="text" placeholder="Search City/Area" id="location-input">
+            </div>
+            <div class="search-field">
+                <label>Price Range</label>
+                <select id="price-range">
+                    <option value="any">Any Price</option>
+                    <option value="budget">Under ₹1000000</option>
+                    <option value="mid">₹1000000 - ₹2000000</option>
+                    <option value="premium">₹2000000+</option>
+                </select>
+            </div>
+            <button class="btn-search">Search Now</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <span class="about-badge">About Elysian Acres</span>
+            <h2>We Help You Find Your Dream Property</h2>
+            <p>Elysian Acres is a premier real estate firm dedicated to providing exceptional properties that blend luxury with strategic location. With over 15 years of experience, we've helped thousands of families find their perfect home.</p>
+            <p>Our commitment to transparency, quality, and customer satisfaction sets us apart in the real estate market.</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>1500+</h4>
+                    <p>Properties Sold</p>
+                </div>
+                <div class="stat-item">
+                    <h4>25k+</h4>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h4>15+</h4>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-img"></div>
+    </section>
+
+    <section class="listings" id="listings">
+        <div class="section-header">
+            <div>
+                <p style="color: var(--accent); font-weight: 700; text-transform: uppercase; margin-bottom: 10px;">
+                    Featured Collections</p>
+                <h2>Premium Properties</h2>
+            </div>
+            <div class="filter-tabs">
+                <!-- Filters could go here -->
+            </div>
+        </div>
+
+        <div class="listing-grid">
+            <!-- Property Card 1: Flat -->
+            <div class="card" data-type="flat">
+                <div class="card-img" style="background-image: url('flat1.png')">
+                    <span class="badge">FLAT</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-price">₹850,000</div>
+                    <h3 class="card-title">Skyline Penthouse</h3>
+                    <div class="card-location">📍 Downtown Central, Metro City</div>
+                    <div class="card-features">
+                        <div class="feature">🛏️ 3 Beds</div>
+                        <div class="feature">🚿 2 Baths</div>
+                        <div class="feature">📐 1,800 sqft</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Card 2: Plot -->
+            <div class="card" data-type="plot">
+                <div class="card-img" style="background-image: url('plot1.png')">
+                    <span class="badge">PLOT</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-price">₹420,000</div>
+                    <h3 class="card-title">Oakwood Estates Plot</h3>
+                    <div class="card-location">📍 North Suburbs, Green Valley</div>
+                    <div class="card-features">
+                        <div class="feature">📐 5,000 sqft</div>
+                        <div class="feature">🌳 Residential</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Card 3: Flat -->
+            <div class="card" data-type="flat">
+                <div class="card-img" style="background-image: url('flat2.png')">
+                    <span class="badge">FLAT</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-price">₹1,200,000</div>
+                    <h3 class="card-title">Serene Garden Apartment</h3>
+                    <div class="card-location">📍 West Coast, Ocean View</div>
+                    <div class="card-features">
+                        <div class="feature">🛏️ 4 Beds</div>
+                        <div class="feature">🚿 3 Baths</div>
+                        <div class="feature">📐 2,400 sqft</div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info" style="background: var(--primary); color: var(--white); padding: 40px; border-radius: 24px 0 0 24px;">
+                <h2>Get In Touch</h2>
+                <p style="opacity: 0.8; margin-bottom: 30px;">Have questions about a property or want to schedule a visit? Our experts are here to help you every step of the way.</p>
+                
+                <div class="contact-method" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div class="contact-icon" style="background: rgba(255, 255, 255, 0.1); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.2rem;">📍</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem;">Our Office</h4>
+                        <p style="margin: 0; opacity: 0.7; font-size: 0.9rem;">123 Luxury Lane, Green Valley, MG 56001</p>
+                    </div>
+                </div>
+
+                <div class="contact-method" style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div class="contact-icon" style="background: rgba(255, 255, 255, 0.1); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.2rem;">📞</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem;">Phone Number</h4>
+                        <p style="margin: 0; opacity: 0.7; font-size: 0.9rem;">+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="contact-method" style="display: flex; align-items: center; gap: 15px;">
+                    <div class="contact-icon" style="background: rgba(255, 255, 255, 0.1); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.2rem;">✉️</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem;">Email Address</h4>
+                        <p style="margin: 0; opacity: 0.7; font-size: 0.9rem;">contact@elysianacres.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form" style="flex: 1.5; padding: 40px; background: var(--white); border-radius: 0 24px 24px 0;">
+                <form id="main-contact-form">
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                        <div style="flex: 1;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">First Name</label>
+                            <input type="text" placeholder="John" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 12px; outline: none;">
+                        </div>
+                        <div style="flex: 1;">
+                            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Last Name</label>
+                            <input type="text" placeholder="Doe" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 12px; outline: none;">
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address</label>
+                        <input type="email" placeholder="john@example.com" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 12px; outline: none;">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px; font-weight: 600;">Message</label>
+                        <textarea rows="5" placeholder="How can we help you?" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 12px; outline: none; resize: none;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--primary); color: var(--white); padding: 50px 5%; text-align: center;">
+        <div class="logo" style="color: var(--white); justify-content: center; margin-bottom: 20px;">ELYSIAN
+            <span>ACRES</span>
+        </div>
+        <p style="opacity: 0.7; margin-bottom: 30px;">Your gateway to premium living and strategic investments.</p>
+        <p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2026 Elysian Acres Real Estate. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Inquire Now</h2>
+            <p style="margin-bottom: 25px; color: var(--text-muted);">Leave your details and we'll get back to you
+                within 24 hours.</p>
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="4" placeholder="I'm interested in the Skyline Penthouse..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
